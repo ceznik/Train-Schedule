@@ -1,0 +1,90 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Train Schedule</title>
+	<!-- Reset -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+</head>
+<body>
+	<div class="jumbotron">
+		<h1 class="text-center">Trains Boarding</h1>
+	</div>
+<div class="col-lg-12">
+<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Current Train Schedule</h3>
+			</div>
+  <table class="table" id="tableData">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       
+      </tr>
+      <tr>
+       
+      </tr>
+      <tr>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Add Train</h3>
+			</div>
+			
+			<div class="panel-body">
+				
+				<!-- Add Train Form )-->
+				<form role="form">
+				  <div class="form-group">
+				    <label for="text">Train Name:</label>
+				    <input type="text" class="form-control" id="nameInput">
+				  </div>
+				  <div class="form-group">
+				    <label for="text">Destination:</label>
+				    <input type="text" class="form-control" id="destInput">
+				  </div>
+				  <div class="form-group">
+				    <label for="text">First Train Time (HH:mm - military time):</label>
+				    <input type="time" class="form-control" id="firstTrainInput">
+				  </div>
+				  <div class="form-group">
+					 <label for="comment">Frequency(min):</label>
+					 <input type="number" class="form-control" rows="5" id="frequency">
+				   </div>
+				  <button type="button" class="btn btn-default" id="addTrain">Submit</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<!-- Moment.js -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!-- trainScript.js -->
+<script type="text/javascript" src="assets/javascript/trainScript.js"></script>
+</body>
+</html>

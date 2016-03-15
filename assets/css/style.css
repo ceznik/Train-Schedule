@@ -1,0 +1,8 @@
+.jumbotron{
+	background-color: #3a10f2;
+	color: orange;
+}
+#tableData > td {
+	font-family: 'Penn Station'
+	src: url(http://ff.static.1001fonts.net/p/e/penn-station.regular.ttf) format("truetype");
+}	
