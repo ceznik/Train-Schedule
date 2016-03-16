@@ -1,8 +1,19 @@
-.jumbotron{
-	background-color: #3a10f2;
-	color: orange;
+@font-face {
+	font-family: pennStation;
+	src: local("penn-station.tff");
+	font-weight: 400;
 }
-#tableData > td {
-	font-family: 'Penn Station'
-	src: url(http://ff.static.1001fonts.net/p/e/penn-station.regular.ttf) format("truetype");
+@font-face {
+	font-family: 'empireState';
+	src: local("empirestate.regular.tff");
+}
+.body {
+	font-family: pennStation;
+	font-style: normal;
+	font-size: 24px;
 }	
+.jumbotron{
+	background-color: blue;
+	color: orange;
+	font-family: 'empireState';
+}
